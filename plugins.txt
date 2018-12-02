@@ -1,0 +1,4 @@
+scm-api:2.3.0
+git-client:2.7.3
+git:3.9.1
+blueocean:1.9.0
