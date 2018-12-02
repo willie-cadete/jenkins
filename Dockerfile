@@ -3,8 +3,8 @@ FROM jenkins/jenkins:lts-slim
 USER root
 
 RUN apt-get update -qq \
-    && apt-get install -y gnupg2 apt-transport-https \
-      ca-certificates gnupg2 software-properties-common sudo rubygems ruby-dev\
+    && apt-get install -y gnupg2 apt-transport-https ca-certificates\
+    gnupg2 software-properties-common sudo rubygems ruby-dev wget rpm\
     && curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 
 RUN echo "deb [arch=amd64] https://download.docker.com/linux/debian stretch \
